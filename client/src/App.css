@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "Kapakana Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Kapakana Regular"), url("./assets/fonts/Kapakana[wght].woff")
+    format("woff");
+}
+
+:root {
+  --background-primary-color: #000000;
+  --background-secondary-color: #363636;
+  --background-tertiary-color: #383838;
+
+  --footerbg-primary-color: #ffffff;
+  --footerbg-secondary-color: #e7e7e7;
+  --footerbg-tertiary-color: #e0e0e0;
+
+  --color-red: #c50000;
+
+  --fontcolor-white: #ffffff;
+  --fontcolor-grey: #444444;
+  --fontcolor-gold: #ccb014;
+  --fontcolor-gold-dark: #66580a;
+  --fontcolor-black: #000000;
+
+  --font-aboreto: "Aboreto", serif;
+  --font-grotesk: "Familjen Grotesk", serif;
+  --font-kapakana: "Kapakana Regular", serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    85deg,
+    var(--background-primary-color) 0%,
+    var(--background-secondary-color) 40%,
+    var(--background-tertiary-color) 50%,
+    var(--background-secondary-color) 60%,
+    var(--background-primary-color) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboreto-regular {
+  font-family: "Aboreto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.familjen-grotesk-500 {
+  font-family: "Familjen Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kapakana-regular {
+  font-family: var(--font-kapakana);
+  font-weight: normal;
+  font-style: normal;
+}
